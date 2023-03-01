@@ -1,0 +1,15 @@
+.mat-tab-label {
+    min-width: 125px!important;
+}
+
+.mat-sidebar-content {
+    background: #f3f3f3!important;
+}
+
+::ng-deep.mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgb(0 0 0 / 23%)!important;
+}
+
+::ng-deep.mat-form-field-infix {
+    padding: 0.5em 0!important;
+}

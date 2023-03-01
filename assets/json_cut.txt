@@ -1,0 +1,2 @@
+"outputPath": "dist/groceryStore1", change to "outputPath": "docs",
+for deploy ==> <base href="/orlam-portfolio/">

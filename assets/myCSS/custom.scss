@@ -1,0 +1,652 @@
+@import 'myColor.scss';
+// // ************** FORMAT *******************//
+.nav-scroll {
+    overflow: auto;
+}
+
+ ::ng-deep {
+    // .mat-focused .mat-form-field-label {
+    //   color: green !important;
+    // }
+    .mat-form-field-underline {
+        background-color: $primary-color !important;
+    }
+    .mat-focused .mat-form-field-ripple {
+        background-color: $primary-color !important;
+    }
+}
+
+* {
+    box-sizing: border-box
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+// margin bottom
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.mb-6 {
+    margin-bottom: 60px;
+}
+
+// Margin-top
+.mt-1 {
+    margin-top: 10px!important;
+}
+
+.mt-2 {
+    margin-top: 20px!important;
+}
+
+.mt-3 {
+    margin-top: 30px!important;
+}
+
+.mt-4 {
+    margin-top: 40px!important;
+}
+
+.mt-5 {
+    margin-top: 50px!important;
+}
+
+.mt-6 {
+    margin-top: 60px!important;
+}
+
+// Margin right
+.mr-1 {
+    margin-right: 10px;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+
+.mr-3 {
+    margin-right: 30px;
+}
+
+.mr-4 {
+    margin-right: 40px;
+}
+
+// margin left
+.ml-1 {
+    margin-left: 10px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.ml-3 {
+    margin-left: 30px;
+}
+
+.ml-4 {
+    margin-left: 40px;
+}
+
+// All Sides
+.m-1 {
+    margin: 10px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-3 {
+    margin: 30px;
+}
+
+.m-4 {
+    margin: 40px;
+}
+
+// Font Sizes
+.text-secondary {
+    color: $secondary-color!important;
+}
+
+.text-primary {
+    color: $primary-color!important;
+}
+
+.text-warning {
+    color: $warning-color!important;
+}
+
+.responsive-flex-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-el {
+    display: flex;
+    align-items: center;
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.vertical-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+// ************** Custom Styles ****************** 
+.label {
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.custom-input {
+    // width: 35px;
+    font-size: small!important;
+    color: $secondary-color
+}
+
+.custom-pcm-input {
+    box-sizing: border-box!important;
+    font-size: small!important;
+    border: 1px solid #555;
+    background: #fff;
+    margin: 3px 0 0px;
+    line-height: 25px!important;
+    padding: 1px 10px;
+    width: 100%;
+    border-radius: 3px;
+    &.mat-form-field-invalid {
+        border: 1px solid $warning-color!important;
+        color: $warning-color;
+    }
+    // encapsulation: ViewEncapsulation.None
+    .mat-form-field-wrapper {
+        padding-bottom: 0!important;
+    }
+    .mat-form-field-infix {
+        border-top: none!important;
+    }
+    div.mat-form-field-underline,
+    div.mat-form-field-appearance-legacy {
+        height: 0px!important;
+        display: none!important;
+    }
+}
+
+//************* CUSTOM *********************//
+.global-menu {
+    border: none !important;
+}
+
+.pageContent {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0px 5px;
+}
+
+.sidenav {
+    width: 200px !important;
+    padding: 0;
+    left: 0;
+    margin: 0;
+    right: 0;
+    top: 0;
+    border: none;
+    color: white;
+    position: fixed !important;
+    background-color: $primary-color !important;
+}
+
+.mat-container {
+    height: 100% !important;
+    padding: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.custom-sidenav {
+    position: fixed;
+    z-index: 100;
+    width: 30%;
+    background: white;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 1px 0px 8px -3px;
+    padding: 20px 30px;
+    height: 100vh;
+    top: 0;
+    // transition: width 2s, height 2s, transform 2s;
+    // transition: all .5s;
+    // 
+    // transition-property: width;
+    // transition-duration: 0.9s;
+    transition: 0.5s ease-in-out;
+}
+
+.custom-sidenav-phone {
+    position: fixed;
+    z-index: 100;
+    width: 95%;
+    background: white;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 1px 0px 8px -3px;
+    padding: 20px 30px;
+    height: 100vh;
+    top: 0;
+    transition: 0.4s ease-in-out;
+    // transition: width 2s, height 2s, transform 2s;
+    // transition: all .5s;
+}
+
+.globalComment {
+    top: 0;
+    right: 0;
+    width: 35% !important;
+    height: 100% !important;
+    margin: 0;
+    position: fixed !important;
+    z-index: 100;
+    background: white;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    box-shadow: 1px 0px 7px rgba($color: $primary-color, $alpha: 0.312) !important;
+    //     transition: all .5s;
+}
+
+button:focus {
+    outline: none!important;
+}
+
+.nav-scroll {
+    // height: 85vh;
+    overflow: auto;
+}
+
+.clickRow {
+    cursor: pointer;
+}
+
+.custom-form {
+    width: 100%;
+    font-size: small!important;
+    // margin-bottom: -4px;
+}
+
+.custom-form-table {
+    width: 100px;
+    font-size: small!important;
+    margin-bottom: -15px;
+}
+
+.custom-label {
+    font-size: 12px;
+    color: $primary-color;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.error-style {
+    background-color: rgba($color: rgb(255, 0, 51), $alpha: 0.2);
+    color: $warning-color;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.myPrimary {
+    background: $primary-color !important;
+    color: #fff !important;
+}
+
+.myPrimary:disabled {
+    color: #fff !important;
+}
+
+.my-warn {
+    background: $warning-color !important;
+    color: #fff;
+}
+
+.my-secondary {
+    background: $secondary-color !important;
+    color: #fff;
+}
+
+.my-success {
+    background: $success-color !important;
+    color: #fff;
+}
+
+.my-complimentary {
+    background: $complimentary-color !important;
+    color: #fff;
+}
+
+.my-warn-light {
+    background: rgba($color: $warning-color, $alpha: 0.07)!important;
+    color: #fff;
+}
+
+.my-primary-light {
+    background: rgba($color: $primary-color, $alpha: 0.07)!important;
+    color: #fff;
+}
+
+.my-secondary-light {
+    background: rgba($color: $secondary-color, $alpha: 0.05)!important;
+    color: #fff;
+}
+
+.my-success-light {
+    background: rgba($color: $success-color, $alpha: 0.05)!important;
+    color: #fff;
+}
+
+.my-complimentary-light {
+    background: rgba($color: $complimentary-color, $alpha: 0.05)!important;
+    color: #fff;
+}
+
+.my-default-background {
+    background: rgba($color: $primary-color, $alpha: 0.03)!important;
+}
+
+.primary-besty {
+    color: $primary-besty-color !important;
+}
+
+.primary {
+    color: $primary-color !important;
+}
+
+.warn {
+    color: $warning-color !important;
+}
+
+.secondary {
+    color: $secondary-color !important;
+}
+
+.success {
+    color: $success-color !important;
+}
+
+.complimentary {
+    color: $complimentary-color !important;
+}
+
+.text {
+    color: $text-color !important;
+    font-size: 12px !important;
+}
+
+.custom-button {
+    background-color: #fff;
+    border: 2px solid $primary-color !important;
+    padding: 4px;
+}
+
+.custom-git-button {
+    background-color: #fff;
+    border: 2px solid #252525 !important;
+    padding: 4px;
+    color: #252525;
+}
+
+.custom-success-button {
+    background-color: #fff;
+    border: 2px solid $success-color !important;
+    padding: 4px;
+    color: #252525;
+}
+
+.custom-warn-button {
+    background-color: #fff;
+    border: 2px solid $warning-color !important;
+    padding: 4px;
+}
+
+.custom-mat-button {
+    background: rgba($color: $primary-color, $alpha: 0.1)!important;
+}
+
+.custom-scroll-bar {
+    &:hover {
+        &::-webkit-scrollbar {
+            width: 9px!important;
+            //   background:  $secondary-color;
+            //   color: $secondary-color;
+            //   border-style: dashed;
+            //   border-right: none;
+        }
+    }
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px!important;
+        transition: all .5s;
+    }
+    &::-ms-scrollbar {
+        width: 5px!important;
+        transition: all .5s;
+    }
+    &::-o-scrollbar {
+        width: 5px!important;
+        transition: all .5s;
+    }
+    &::-moz-scrollbar {
+        width: 5px!important;
+        transition: all .5s;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $primary-color!important;
+        border-radius: 10px!important;
+    }
+    &::-ms-scrollbar-track {
+        box-shadow: inset 0 0 5px grey!important;
+        border-radius: 10px!important;
+    }
+    &::-o-scrollbar-track {
+        box-shadow: inset 0 0 5px grey!important;
+        border-radius: 10px!important;
+    }
+    &::-moz-scrollbar-track {
+        box-shadow: inset 0 0 5px grey!important;
+        border-radius: 10px!important;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-left: 1px solid $secondary-color;
+        border-radius: 10px!important;
+    }
+    &::-o-scrollbar-thumb {
+        background: $primary-color;
+        border-left: 1px solid $secondary-color;
+        border-radius: 10px!important;
+    }
+    &::-ms-scrollbar-thumb {
+        background: $primary-color;
+        border-left: 1px solid $secondary-color;
+        border-radius: 10px!important;
+    }
+    &::-moz-scrollbar-thumb {
+        background: $primary-color;
+        border-left: 1px solid $secondary-color;
+        border-radius: 10px!important;
+    }
+}
+
+// *************** Custom styling Ends *******************
+// ********************* Generic Stylying **********************
+.hide {
+    display: none;
+}
+
+.comp {
+    color: $warning-color !important;
+}
+
+.page-wrapper {
+    padding: 15px;
+}
+
+.label {
+    font-size: 14px;
+    color: black;
+    // font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.label-normal {
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.label-big {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.global-menu {
+    width: 4%;
+    border: none !important;
+    background: rgba($color: $secondary-color, $alpha: 1) !important;
+}
+
+.split-el {
+    width: 48%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loader-position {
+    width: 100%;
+    margin: 10% auto;
+}
+
+textarea.mat-input-element.cdk-textarea-autosize {
+    resize: none;
+    overflow: hidden;
+}
+
+.stroke-style {
+    border: 3px solid;
+    border-color: $primary-color!important;
+    color: $primary-color!important;
+    background-color: rgba($color: $secondary-color, $alpha: 0.05) !important;
+    // background: rgba($color: $secondary-color, $alpha: 0.108) !important;
+}
+
+.stroke-style-secondary {
+    border: 3px solid;
+    border-color: $secondary-color!important;
+    color: $secondary-color!important;
+    background-color: rgba($color: $primary-color, $alpha: 0.02) !important;
+}
+
+sup {
+    color: $warning-color !important;
+}
